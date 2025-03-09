@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <title>FINVEST Solutions</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Tailwind Config for Roboto -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            roboto: ['Roboto', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+
+<body>
+  <nav class="bg-white shadow-lg p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="images/home/finvest-logo-jpg.jpg" class="w-40" alt="Finvest Logo">
+      </div>
+
+      <!-- Mobile/Tablet Menu Button (Visible on md and below) -->
+      <button id="menu-btn" class="lg:hidden block text-gray-600 focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Links (Hidden on md & below, shown on lg) -->
+      <div id="nav-links" class="hidden lg:flex items-center space-x-6">
+        <a href="#" class="nav-link text-[#817F7F] hover:text-[#000000] transition text-base font-bold">Home</a>
+        <a href="AboutUs.html" class="nav-link text-[#817F7F] hover:text-[#000000] transition text-base font-bold">About
+          Us</a>
+        <a href="#" class="nav-link text-[#817F7F] hover:text-[#000000] transition text-base font-bold">Our Services</a>
+        <a href="#" class="nav-link text-[#817F7F] hover:text-[#000000] transition text-base font-bold">Investor
+          Charter</a>
+        <a href="Grievance-Redressa.html"
+          class="nav-link text-[#817F7F] hover:text-[#000000] transition text-base font-bold">Grievance Redressal</a>
+        <a href="ContactUs.html"
+          class="bg-[#fe8c00] text-[#000000] py-2 px-5 rounded-full transition text-base hover:bg-[#ff7300] font-bold">Contact
+          Us</a>
+      </div>
+    </div>
+
+    <!-- Mobile/Tablet Menu (Hidden by default, shown when toggled) -->
+    <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-center space-y-4 mt-4 bg-white shadow-md p-4">
+      <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition text-base">Home</a>
+      <a href="AboutUs.html" class="nav-link text-gray-700 hover:text-blue-600 transition text-base">About Us</a>
+      <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition text-base">Our Services</a>
+      <a href="#" class="nav-link text-gray-700 hover:text-blue-600 transition text-base">Investor Charter</a>
+      <a href="Grievance-Redressa.html"
+        class="nav-link text-gray-700 hover:text-blue-600 transition text-base">Grievance Redressal</a>
+      <a href="ContactUs.html"
+        class="bg-[#fe8c00] text-white font-semibold py-2 px-5 rounded-full transition text-base hover:bg-[#ff7300]">Contact
+        Us</a>
+    </div>
+  </nav>
+  <section>
+    <div>
+      <img src="images/aboutus/Frame2.png" class="2xl:w-full" alt="" />
+    </div>
+    <!-- <div class="w-full lg:w-[1440px] lg:h-[224px] md:h-40 h-40 bg-orange-500 flex flex-col md:justify-normal justify-center  items-center bg-center bg-repeat-x md:bg-contain bg-cover "style="background-image: url('images/aboutus/aboutgroup.png')">
+            <h1 class="text-2xl md:text-4xl font-bold mt-10 lg:mt-32 md:mt-10">Contact Us</h1>
+            <div class="w-full md:h-20 h-10 flex justify-center items-center">
+                <img src="images/aboutus/Home.png" class="w- h-7 mr-2"/>
+                <h1 class="text-2xl">></h1>
+                <h1 class="text-lg md:text-[15px] ml-2">Contact Us</h1>
+
+            </div> -->
+    </div>
+
+    <div class="w-full p-4 md:p-10 flex flex-col lg:flex-row md:flex-col gap-4">
+      <!-- Left Section (Contact Info) -->
+      <div class="rounded-lg w-full md:w-full lg:w-2/5 bg-black p-6 md:p-12">
+        <h1 class="mt-2 text-orange-500 font-bold text-3xl">Contact Us</h1>
+        <h1 class="mt-3 text-white font-semibold text-xl">Say something to start a live chat!</h1>
+        <img src="images/contactus/contactus.png" class="mt-8 w-32 lg:ml-0 md:ml-auto md:w-40 h-auto" />
+
+        <div class="w-full mt-6 space-y-4 lg:mt-6 md:-mt-44">
+          <div class="flex items-center">
+            <img src="images/footer/card.png" class="w-5 h-5" />
+            <h1 class="ml-4 text-sm text-white">INH000XXXXXX</h1>
+          </div>
+          <div class="flex items-center">
+            <img src="images/footer/email.png" class="w-5 h-5" />
+            <h1 class="ml-4 text-sm text-white">XYZ@MAIL.COM</h1>
+          </div>
+          <div class="flex items-center">
+            <img src="images/footer/white-phone.png" class="w-5 h-5" />
+            <h1 class="ml-4 text-sm text-white">000011111000</h1>
+          </div>
+          <div class="flex items-start">
+            <img src="images/footer/location.png" class="w-5 h-5 mt-1" />
+            <h1 class="ml-4 text-sm text-white">Finvest Solutions, XYZ Street, City, State, PIN Code, India.</h1>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <img src="images/footer/socialicons.png" class="w-80 h-10" />
+        </div>
+      </div>
+
+      <!-- Right Section (Form) -->
+      <div class="flex flex-col justify-between w-full md:w-full lg:w-3/5 bg-[#FDE8BB] p-6 md:p-12">
+        <div class="w-full grid grid-cols-2 md:grid-cols-2 gap-6">
+          <div>
+            <h1 class="text-[#717171] font-poppins text-[15px]">First Name</h1>
+            <input name="name" placeholder="Enter Your Name"
+              class="bg-[#FDE8BB] font-poppins w-full border-b-2 border-black mt-2 p-2 focus:outline-none" />
+          </div>
+
+          <div>
+            <h1 class="text-[#717171] font-poppins text-[15px]">Last Name</h1>
+            <input name="lname" placeholder="Enter Your Last Name"
+              class="bg-[#FDE8BB] font-poppins w-full border-b-2 border-black mt-2 p-2 focus:outline-none" />
+          </div>
+
+          <div>
+            <h1 class="text-[#717171] font-poppins text-[15px]">Email</h1>
+            <input name="email" type="email" placeholder="Enter Your Email"
+              class="bg-[#FDE8BB] font-poppins w-full border-b-2 border-black mt-2 p-2 focus:outline-none" />
+          </div>
+
+          <div>
+            <h1 class="text-[#717171] font-poppins text-[15px]">Phone Number</h1>
+            <input name="number" type="number" placeholder="Enter Your Phone Number"
+              class="bg-[#FDE8BB] font-poppins w-full border-b-2 border-black mt-2 p-2 focus:outline-none" />
+          </div>
+
+          <div class="col-span-2 md:col-span-2">
+            <h1 class="text-[#717171] font-poppins text-[15px]">Message</h1>
+            <textarea name="message" placeholder="Write Your Message"
+              class="bg-[#FDE8BB] font-poppins w-full border-b-2 border-black mt-2 p-2 focus:outline-none h-8"></textarea>
+          </div>
+        </div>
+
+        <div class="col-span-1 md:col-span-2 flex justify-center md:justify-end mt-4">
+          <button class="bg-black text-white px-6 py-3 rounded-full text-[15px] font-bold w-full sm:w-auto [width:-webkit-fill-available] sm:[width:auto]">
+              Send Message
+          </button>
+      </div>
+      </div>
+    </div>
+    <!-- <footer class="bg-black text-white overflow-hidden p-6">
+          <div
+            class="flex flex-col md:flex-row md:justify-between gap-40 border-b-2 pb-6"
+          >
+            <div class="flex flex-col gap-4 w-full md:w-1/4">
+              <img src="images/footer/logo.png" class="w-52 h-auto" alt="Logo" />
+              <div class="flex items-center gap-3">
+                <img src="images/footer/card.png" class="w-5 h-5" />
+                <p class="text-sm">INH000XXXXXX</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/footer/email.png" class="w-5 h-5" />
+                <p class="text-sm">XYZ@MAIL.COM</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <img src="images/footer/white-phone.png" class="w-5 h-5" />
+                <p class="text-sm">000011111000</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <img src="images/footer/location.png" class="w-5 h-5 mt-1" />
+                <p class="text-sm leading-tight">
+                  Finvest Solutions, XYZ Street, City, State, PIN Code, India.
+                </p>
+              </div>
+              <div class="flex items-center mt-4">
+                <img src="images/footer/socialicons.png" class="h-8" />
+              </div>
+            </div>
+    
+            <div class="flex flex-wrap justify-between w-full md:w-3/4">
+              <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Check circle.png" class="w-5 h-5" />
+                  <p class="text-sm">Terms & Conditions</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Credit card.png" class="w-5 h-5" />
+                  <p class="text-sm">Refund Policy</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Lock.png" class="w-5 h-5" />
+                  <p class="text-sm">Privacy Policy</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Trello.png" class="w-5 h-5" />
+                  <p class="text-sm">Disclaimer</p>
+                </div>
+              </div>
+    
+              <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Trending up.png" class="w-5 h-5" />
+                  <p class="text-sm">Investor Charter</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Layers.png" class="w-5 h-5" />
+                  <p class="text-sm">Grievance Redressal</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Edit.png" class="w-5 h-5" />
+                  <p class="text-sm">Complaints</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Start learning.png" class="w-5 h-5" />
+                  <p class="text-sm">Copyright</p>
+                </div>
+              </div>
+    
+              <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Group.png" class="w-5 h-5" />
+                  <p class="text-sm">FAQ</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Icon.png" class="w-5 h-5" />
+                  <p class="text-sm">Blog</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="images/footer/Phone.png" class="w-5 h-5" />
+                  <p class="text-sm">Contact Us</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-6 text-[#8F8F8F]">
+            <h2 class="text-xl font-semibold">Disclosure & Disclaimer</h2>
+            <ol class="list-decimal ml-5 mt-3 space-y-2 text-sm">
+              <li>
+                Finvest Solutions is a SEBI-Registered Research Analyst
+                (Registration No. XXXXX).
+              </li>
+              <li>
+                The information and research provided on this website do not
+                constitute investment advice or an offer to buy or sell any
+                financial instruments.
+              </li>
+              <li>
+                Investments in the securities market are subject to market risks.
+                Thorough research and/or consultation with an independent
+                professional advisor is recommended before making any investment
+                decisions.
+              </li>
+              <li>
+                Past performance of securities or products does not guarantee future
+                returns.
+              </li>
+              <li>
+                Clients are advised to read all relevant documents and disclosures
+                carefully before investing.
+              </li>
+            </ol>
+          </div>
+    
+          <div class="mt-8 flex justify-center text-center p-4">
+            <h3 class="text-sm md:text-sm">
+              © 2025 Finvest Solutions. All Rights Reserved. SEBI-Registered
+              Research Analyst, Reg. No. XXXXX.
+            </h3>
+          </div>
+        </footer>
+         -->
+
+
+  </section>
+
+  <footer class="bg-black text-white overflow-hidden p-6 md:grid-cols-1">
+    <!-- Top Section: Main Footer Content -->
+    <div class="flex flex-col md:flex-row md:justify-between gap-40 border-b-2 pb-6">
+      <!-- Logo & Contact Section -->
+      <div class="flex flex-col gap-4 w-full md:w-1/4">
+        <img src="images/footer/logo.png" class="w-52 h-auto" alt="Logo" />
+        <div class="flex items-center gap-3">
+          <img src="images/footer/card.png" class="w-5 h-5" />
+          <p class="text-sm">INH000XXXXXX</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="images/footer/email.png" class="w-5 h-5" />
+          <p class="text-sm">XYZ@MAIL.COM</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="images/footer/white-phone.png" class="w-5 h-5" />
+          <p class="text-sm">000011111000</p>
+        </div>
+        <div class="flex items-start gap-3">
+          <img src="images/footer/location.png" class="w-5 h-5 mt-1" />
+          <p class="text-sm leading-tight">
+            Finvest Solutions, XYZ Street, City, State, PIN Code, India.
+          </p>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="images/footer/socialicons.png" class="h-8" />
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="flex flex-wrap justify-between w-full md:w-3/4">
+        <!-- Column 1 -->
+        <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Check circle.png" class="w-5 h-5" />
+            <p class="text-sm">Terms & Conditions</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Credit card.png" class="w-5 h-5" />
+            <p class="text-sm">Refund Policy</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Lock.png" class="w-5 h-5" />
+            <p class="text-sm">Privacy Policy</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Trello.png" class="w-5 h-5" />
+            <p class="text-sm">Disclaimer</p>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Trending up.png" class="w-5 h-5" />
+            <p class="text-sm">Investor Charter</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Layers.png" class="w-5 h-5" />
+            <a href="Grievance-Redressa.html" class="text-sm cursor-pointer">Grievance Redressal</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Edit.png" class="w-5 h-5" />
+            <p class="text-sm">Complaints</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Start learning.png" class="w-5 h-5" />
+            <p class="text-sm">Copyright</p>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="flex flex-col gap-8 w-1/2 md:w-1/4">
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Group.png" class="w-5 h-5" />
+            <a href="FAQ.html" class="text-sm cursor-pointer">FAQ</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Icon.png" class="w-5 h-5" />
+            <p class="text-sm">Blog</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="images/footer/Phone.png" class="w-5 h-5" />
+            <a href="ContactUs.html" class="text-sm">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclosure Section -->
+    <div class="mt-6 text-[#8F8F8F]">
+      <h2 class="text-xl font-semibold">Disclosure & Disclaimer</h2>
+      <ol class="list-decimal ml-5 mt-3 space-y-2 text-sm">
+        <li>
+          Finvest Solutions is a SEBI-Registered Research Analyst
+          (Registration No. XXXXX).
+        </li>
+        <li>
+          The information and research provided on this website do not
+          constitute investment advice or an offer to buy or sell any
+          financial instruments.
+        </li>
+        <li>
+          Investments in the securities market are subject to market risks.
+          Thorough research and/or consultation with an independent
+          professional advisor is recommended before making any investment
+          decisions.
+        </li>
+        <li>
+          Past performance of securities or products does not guarantee future
+          returns.
+        </li>
+        <li>
+          Clients are advised to read all relevant documents and disclosures
+          carefully before investing.
+        </li>
+      </ol>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 flex justify-center text-center p-4">
+      <h3 class="text-sm md:text-sm">
+        © 2025 Finvest Solutions. All Rights Reserved. SEBI-Registered
+        Research Analyst, Reg. No. XXXXX.
+      </h3>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Toggle mobile menu visibility
+    menuBtn.addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Handle navigation link clicks
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Remove black color from all links
+        navLinks.forEach(nav => {
+          nav.classList.remove('text-[#000000]');
+          nav.classList.add('text-[#817F7F]'); // Reset to default color
+        });
+
+        // Add black color to the clicked link
+        link.classList.add('text-[#000000]');
+        link.classList.remove('text-[#817F7F]'); // Remove default color
+      });
+    });
+  </script>
+</body>
+
+</html>
